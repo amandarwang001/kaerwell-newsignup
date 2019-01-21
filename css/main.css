@@ -37,7 +37,7 @@ body {
 }
 
 .padding-left {
-	padding-left: 70px;
+	padding-left: 40px;
 }
 
 .white-text {
@@ -88,9 +88,16 @@ body {
     text-decoration: none;
 }
 
+.li-feature{
+	margin-left: -50px;
+}
 
-
-
-
+/* Medium devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) { 
+.li-feature {
+	margin-left: 0px;
+}
+}
+ 
 
 
