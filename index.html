@@ -2,105 +2,250 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+<!--[if gt IE 8]><!-->  <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <style>
+  body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
+</style>
+<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+<!-- Google Open Sans font -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+<link rel="stylesheet" href="css/main.css">
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
+<script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+</head>
+<body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
-            <div class="form-group">
-              <input type="text" placeholder="Email" class="form-control">
+          <![endif]-->
+          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Project name</a>
+              </div>
+              <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-right" role="form">
+                  <div class="form-group">
+                    <input type="text" placeholder="Email" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input type="password" placeholder="Password" class="form-control">
+                  </div>
+                  <button type="submit" class="btn btn-success">Sign in</button>
+                </form>
+              </div><!--/.navbar-collapse -->
             </div>
-            <div class="form-group">
-              <input type="password" placeholder="Password" class="form-control">
-            </div>
-            <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+          </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+          <!-- Main jumbotron for a primary marketing message or call to action -->
+          <div class="jumbotron" id="signUpForm">
+
+            <div class="row column-padding">
+              <div class="col-md-6 column-padding">
+               <h1 class="teal-text">Free Sign Up</h1>
+               <h2 class="teal-text">Health Professional Registration</h2>
+
+
+               <form>
+
+                <div class="form-inline padding-bottom">
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputName2">Name</label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="First Name">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputName2">Last Name</label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Last Name">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputName2">Title</label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Title">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputName2">Practice Name</label>
+                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Practice Name">
+                </div>
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputName2">Practice Address</label>
+                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Street Address">
+                </div>
+
+                <div class="form-inline padding-bottom">
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputName2">City</label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="City">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputName2">State/Region</label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="State">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputName2">Postal Code</label>
+                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Postal Code">
+                  </div>
+                </div>
+
+                <div class="form-inline padding-bottom">
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputEmail2">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputName2">Phone</label>
+                    <input type="tel" class="form-control" id="exampleInputName2" placeholder="Phone">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputName2">Website URL</label>
+                  <input type="text" class="form-control" id="exampleInputName2" placeholder="Website URL">
+                </div>
+
+                <div class="form-inline padding-bottom">
+                  <div class="form-group">
+                    <label for="exampleInputFile">License PDF</label>
+                    <input type="file" id="exampleInputFile">
+                  </div>
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputPassword1">Select Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Select A Password">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <p class="help-block">Do you currently have an online dispensary?</p>
+                  <div class="radio-inline">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                      Yes
+                    </label>
+                  </div>
+                  <div class="radio-inline">
+                    <label>
+                      <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                      No
+                    </label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="sr-only" for="exampleInputName2">How did you hear about us?</label>
+                  <input type="text" class="form-control" id="exampleInputName2" placeholder="How did you hear about us?">
+                </div>
+
+                <h6 class="help-block">By signing up I understand and agree with the <a href="www.google.com">Terms of Use</a></h6>
+                <button type="submit" class="btn btn-teal">Register Free</button>
+              </form>
+
+            </div>
+            <div class="col-md-6 column-padding" id="accountInfo">
+              <h3 class="white-text padding-bottom">With your free account you will be able to:</h3>
+              <ul class="padding-bottom padding-left" style="list-style-type:none">
+                <li class="padding-bottom">
+                  <i class="fas fa-play-circle white-text fa-3x"></i>
+                  &nbsp; &nbsp;
+                  <b> View on-demand webinars.</b>
+                </li>
+                <li class="padding-bottom">
+                  <i class="fas fa-fingerprint white-text fa-3x"></i>
+                  &nbsp; &nbsp;
+                  <b>Create a supplement dispensary as unique as you are:</b>
+                </li>
+
+                <li class="padding-bottom">
+                  <i class="white-text fas fa-laptop fa-3x"></i>
+                  &nbsp; &nbsp;
+                  <b>Dispense online without inventory.</b>
+                </li>
+                <li class="padding-bottom">
+                  <i class="white-text fas fa-infinity fa-3x"></i>
+                  &nbsp; &nbsp;
+                  <b>Virtually unlimited products and brands.</b>
+                </li>
+                <li class="padding-bottom">
+                 <i class="white-text fas fa-user-lock fa-3x"></i>
+                 &nbsp; &nbsp;
+                 <b>Include your private labeled products.</b>
+               </li>
+             </ul>
+
+           </div>
+         </div>
+
+
+
+
+
+       </div>
+     </div>
+     <div class="container">
+
+
+      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+      </div>
+      <div class="col-md-4">
+        <h2>Heading</h2>
+        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
       </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-       </div>
-        <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-      </div>
+    <hr>
 
-      <hr>
+    <footer>
+      <p>&copy; Company 2015</p>
+    </footer>
+  </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-      <footer>
-        <p>&copy; Company 2015</p>
-      </footer>
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <script src="js/vendor/bootstrap.min.js"></script>
 
-        <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 
-        <script src="js/main.js"></script>
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+  </script>
+</body>
 </html>
